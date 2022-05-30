@@ -1,9 +1,10 @@
 {:paths ["src/main"]
- :deps  {missionary/missionary  {:mvn/version "b.26"}
-         cljs-bean/cljs-bean    {:mvn/version "1.7.0"}
-         com.taoensso/timbre    {:mvn/version "5.1.2"}
-         ribelo/praxis          {:local/root "../praxis"}}
+ :deps {missionary/missionary {:mvn/version "b.26"}
+        cljs-bean/cljs-bean {:mvn/version "1.7.0"}
+        com.taoensso/timbre {:mvn/version "5.1.2"}
+        com.github.ribelo/praxis {:git/url "https://github.com/ribelo/praxis"
+                                  :sha "4ebb08f6df686b60073328b020d0ae1ea80a0ae0"}}
  :aliases
  {:cljs
   {:extra-paths ["src/dev"]
-   :extra-deps  {thheller/shadow-cljs {:mvn/version "2.17.0"}}}}}
+   :extra-deps {thheller/shadow-cljs {:mvn/version "2.19.0"}}}}}

@@ -1,0 +1,9 @@
+{:paths ["src/main"]
+ :deps  {missionary/missionary  {:mvn/version "b.26"}
+         cljs-bean/cljs-bean    {:mvn/version "1.7.0"}
+         com.taoensso/timbre    {:mvn/version "5.1.2"}
+         ribelo/praxis          {:local/root "../praxis"}}
+ :aliases
+ {:cljs
+  {:extra-paths ["src/dev"]
+   :extra-deps  {thheller/shadow-cljs {:mvn/version "2.17.0"}}}}}

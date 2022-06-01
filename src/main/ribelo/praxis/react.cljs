@@ -5,7 +5,7 @@
    [ribelo.praxis :as px]
    ["react" :as react]))
 
-(def -sentinel #?(:clj (Object.) :cljs (js/Object.)))
+(def -sentinel (js/Object.))
 
 (defn subscribe
   "[inpure] creates `React/useEffect`, that creates a `listener` and calls the
